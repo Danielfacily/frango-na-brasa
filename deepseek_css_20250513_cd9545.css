@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8f0;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
+h1, h2 {
+  color: #b43c1b;
+}
+input, select, button, textarea {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.menu-item {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: 4px;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  gap: 2px;
+}
+.tab-button {
+  flex: 1;
+  padding: 1rem;
+  background: #f0e6dc;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  color: #666;
+  border-radius: 8px 8px 0 0;
+}
+.tab-button:hover:not(.active) {
+  background: #e0d6cc;
+  transform: translateY(-2px);
+}
+.tab-button.active {
+  background: #b43c1b;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.tab-panel {
+  display: none;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+}
+.tab-panel.active {
+  display: block;
+}
+.total-pedido {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #b43c1b;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #fff3e6;
+  border-radius: 4px;
+  text-align: right;
+}
+textarea {
+  height: 80px;
+  resize: vertical;
+}
